@@ -27,7 +27,7 @@ El API deberia tener 4 endpoints que hagan lo siguiente.
 - 15% methodo DELETE
 - 10% commit y Pull request.
 - * 5% BONO si añade un webcontroller enumerando los endpoints.
-  * 5% BONO si añade un un metodo getTotal que calcule el monto del pedido + el IVA (15).
+  * 5% BONO si añade un un metodo getTotal que calcule el monto del pedido + el IVA (15%).
 
 
 # Mucha suerte, pueden buscar cualquier tipo de documentacin
