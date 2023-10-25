@@ -50,15 +50,15 @@ public class Pedido {
 
     public void generarPedido(){
         Pedido pedido1 = new Pedido(3,10000, "Caldosa");
-        setTotal(getTotalFinal(pedido1.precio));
+        pedido1.setTotal(getTotalFinal(pedido1.precio));
         Pedido pedido2 = new Pedido(7, 6678, "mesa");
-        pedido2.getTotalFinal(precio);
+        pedido2.setTotal(getTotalFinal(pedido2.precio));
         Pedido pedido3 = new Pedido(8, 34576, "silla");
-        pedido3.getTotalFinal(precio);
+        pedido3.setTotal(getTotalFinal(pedido3.precio));
         Pedido pedido4 = new Pedido(6, 764329, "cubeta");
-        pedido4.getTotalFinal(precio);
+        pedido4.setTotal(getTotalFinal(pedido4.precio));
         Pedido pedido5 = new Pedido(2, 99730, "rastrillo");
-        pedido5.getTotalFinal(precio);
+        pedido5.setTotal(getTotalFinal(pedido5.precio));
         
         pedidos.add(pedido1);
         pedidos.add(pedido2);
@@ -75,6 +75,7 @@ public class Pedido {
 
     public void addPedido(Pedido pedido)
     {
+        pedido.setTotal(getTotalFinal(pedido.precio));
         pedidos.add(pedido);
     }
 
@@ -83,8 +84,9 @@ public class Pedido {
     }
 
 
-    public void updateCantidadPedido (Pedido pedido, int index) {
+    public void updatePedido (Pedido pedido, int index) {
         this.generarPedido();
+        pedido.setTotal(getTotalFinal(pedido.precio));
         pedidos.set(index, pedido);
         this.getPedidos();
     }

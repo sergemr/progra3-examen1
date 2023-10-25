@@ -28,7 +28,7 @@ public class RestPedidoController {
     @PutMapping("/pedidos")
     public void updateCantidadPedido(int cantidad, double precio, String descripcion, int index){
         Pedido pedido = new Pedido( cantidad, precio,  descripcion);
-        pedido.updateCantidadPedido(pedido, index);
+        pedido.updatePedido(pedido, index);
         pedido.getPedidos();
     }
 
