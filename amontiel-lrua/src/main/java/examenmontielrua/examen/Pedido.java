@@ -8,7 +8,6 @@ public class Pedido {
     private int Precio;
     private int Cantidad;
     private String Descripcion;
-    private double Total;
 
     public int getPrecio() {
         return Precio;
@@ -64,9 +63,12 @@ public class Pedido {
     }
 
     public void getTotal() {
-        for (Pedido pedidoiteracion : pedidos){
-            Total = (pedidoiteracion.getPrecio()+(pedidoiteracion.getPrecio()*(15/100)));
+        double total = 0; 
+        for (Pedido pedidoiteracion : pedidos) {
+            double pedidoTotal = pedidoiteracion.getPrecio() + (pedidoiteracion.getPrecio() * 0.15);
+            
+            total = pedidoTotal;
         }
-        System.out.println(Total);
-    } 
+        System.out.println(total);
+    }
 }

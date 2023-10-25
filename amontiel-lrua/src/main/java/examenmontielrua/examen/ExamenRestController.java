@@ -15,7 +15,6 @@ public class ExamenRestController {
     public void getPedidos(){
        
         pedidoList.getPedidos();
-        pedidoList.getTotal();
     }
     
     @PostMapping("/pedidos")
@@ -40,5 +39,5 @@ public class ExamenRestController {
         pedidoList.updateListMember(pedido,index);
         pedidoList.getPedidos();
     }
-    
+
 }
