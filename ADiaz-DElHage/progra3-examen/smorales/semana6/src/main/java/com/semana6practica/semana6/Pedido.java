@@ -76,6 +76,7 @@ public class Pedido {
         this.genPedidos();
         pedidos.set(descripcion, pedido);
         this.getpedidos();
+
         
 
     }
