@@ -8,6 +8,7 @@ public class Pedido {
     private int Precio;
     private int Cantidad;
     private String Descripcion;
+    private double Total;
 
     public int getPrecio() {
         return Precio;
@@ -53,7 +54,6 @@ public class Pedido {
 
     public void updateListMember(Pedido pedido, int index){
         pedidos.set(index,pedido);
-        this.getPedidos();
     }
 
     public void genPedidos(){
@@ -65,9 +65,8 @@ public class Pedido {
 
     public void getTotal() {
         for (Pedido pedidoiteracion : pedidos){
-            double PrecioA = pedidoiteracion.getPrecio();
-            double Total = PrecioA+(PrecioA*(15/100));
-            System.out.println(Total);
+            Total = (pedidoiteracion.getPrecio()+(pedidoiteracion.getPrecio()*(15/100)));
         }
+        System.out.println(Total);
     } 
 }
