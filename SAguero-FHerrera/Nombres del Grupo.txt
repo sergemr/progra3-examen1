@@ -1,2 +1,13 @@
 Sergio Aguero Valle
 Fabricio Herrera Montero
+
+
+- 15% clonar y actualizar correctamente el GIT, commit y Pull request.
+- 10% Inicializar correctamente el proyecto y todas sus dependecias.
+- 8% Uso correcto de clases y controladores.
+- 10% methodo GET
+- 10% methodo POST
+- 10% methodo PUT
+- 10% methodo DELETE
+
+73

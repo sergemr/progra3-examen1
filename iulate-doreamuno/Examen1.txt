@@ -1,0 +1,10 @@
+
+- 15% clonar y actualizar correctamente el GIT, commit y Pull request.
+- 10% Inicializar correctamente el proyecto y todas sus dependecias.
+- 15% Uso correcto de clases y controladores.
+- 15% methodo GET
+- 15% methodo POST
+- 15% methodo PUT
+- 15% methodo DELETE
+
+100
